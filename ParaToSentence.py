@@ -2,7 +2,6 @@ import re
 import sys
 
 filepath=str(sys.argv[1])
-print filepath
 with open(filepath, 'r') as ifile:
 	s=ifile.read()
 sentences = re.split(r'((?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s)', s)
